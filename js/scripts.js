@@ -45,6 +45,8 @@ function setGameElements() {
   }
 }
 
+setGameElements();
+
 var playerPointsElem = document.getElementById('js-playerPoints'),
     playerNameElem = document.getElementById('js-playerName'),
     computerPointsElem = document.getElementById('js-computerPoints');
@@ -63,8 +65,6 @@ function newGame() {
 function playerPick(playerPick) {
     console.log(playerPick);
 }
-
-Math.floor(Math.random()*3)
 
 function getComputerPick() {
     var possiblePicks = ['ROCK', 'PAPER', 'SCISSORS'];
@@ -85,6 +85,7 @@ function playerPick(playerPick) {
 
 function checkRoundWinner(playerPick, computerPick) {
   playerResultElem.innerHTML = computerResultElem.innerHTML = '';
+}
 
   var winnerIs = 'player';
 
